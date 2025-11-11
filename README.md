@@ -29,7 +29,8 @@ Restore a volume from a snapshot and confirm data recovery.
 
 ## **Architecture Diagram**
 
-Description:
+<img width="1200" height="300" alt="6f4642e9-7656-491e-8de4-5dbe7185aa32" src="https://github.com/user-attachments/assets/85d5f2c1-0f95-478f-936c-6c7fddc6ac0b" />
+
 This architecture includes:
 
 One EC2 instance (Lab Instance)
@@ -101,12 +102,19 @@ ls /mnt/data-store2/file.txt  # File restored successfully
 
 #	Screenshot Name	Description
 EBS Volume Created	Shows “My Volume” in Available state with 1 GiB size.
+<img width="1669" height="500" alt="ebs volume created" src="https://github.com/user-attachments/assets/82f9f953-7dac-485f-9ec3-a5f0d4d3eb10" />
 
 Volume Attached to EC2	Confirms /dev/sdb is In-use by the Lab instance.
+<img width="1677" height="300" alt="volume attached to ec2" src="https://github.com/user-attachments/assets/8e9e15a4-5e24-4fb2-b8ab-5f94b2598bf2" />
 
 File System Mounted and File Created	Displays successful mount and contents of /mnt/data-store/file.txt.
+<img width="1254" height="205" alt="file system mounted and created" src="https://github.com/user-attachments/assets/ba4e270c-1927-44af-9eaa-5f7da2e72218" />
+
+Deleted volume file showing cannot access /mnt/data-store2/file.txt
+<img width="1408" height="141" alt="shows file deleted" src="https://github.com/user-attachments/assets/e6641dd6-248c-4464-a49f-8f2541966c2d" />
 
 Restored Volume File Verified	Shows /mnt/data-store2/file.txt restored after snapshot recovery.
+<img width="860" height="195" alt="restored volume after snapshot recovery" src="https://github.com/user-attachments/assets/25ccec11-0f61-48fe-a8c5-c3ef2d6c1c53" />
 
 
 ## **Tools Used**
